@@ -33,8 +33,11 @@ with col1:
     st.dataframe(tabla1, use_container_width = True)
     
     # Condiciones de éxito y fallo
-    st.success(f"Si ri se encuentra dentro de 0 a {prob_exito}, xi = 0")
-    st.error(f"Si ri se encuentra dentro de {prob_exito + 0.01} a 1, xi = 1")
+    st.info(f"""
+            Si ri se encuentra dentro de 0 a {prob_exito}, xi = 0
+            \nr
+            Si ri se encuentra dentro de {prob_exito + 0.01} a 1, xi = 1
+    """)
 
 if prob_exito and dias:
     with col2:
